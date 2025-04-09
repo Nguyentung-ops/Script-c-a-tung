@@ -32,6 +32,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
 ------ Tab
      local Tab1o = MakeTab({Name = "Farm Ngu"})
      local Tab2o = MakeTab({Name = "Kaitun"})
+     local Tab3o = MakeTab({Name = "Cần Key"})
 ------- BUTTON
     
     AddButton(Tab1o, {
@@ -105,5 +106,22 @@ getgenv().Configs = {
     ["Buy Stuffs"] = true -- buso, geppo, soru, ken haki, ...
 }
 repeat task.wait() pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/kaitun.lua"))() end) until getgenv().Check_Execute
+  end
+  })
+
+AddButton(Tab1o, {
+     Name = "Bắp Red",
+    Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/refs/heads/main/Bap(Beta)"))()
+  end
+  })
+
+AddButton(Tab1o, {
+     Name = "Xete Hup",
+    Callback = function()
+	  
+   getgenv().Version = "V1"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
   end
   })
